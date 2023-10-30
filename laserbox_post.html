@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sophia's Engineering Website</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">ENGR 11a</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Back</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header2 class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Project 5: Laser cutting a box</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on October 28, 2023 by Sophia Posner</div>
+                        </header>
+                        <!-- Preview image figure-->
+                        <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/final_cut.jpeg" alt="..." width="500" height="500" /></figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">Side note: I realized I did not take enough pictures, I will take more on Tuesday and then reupdate my site</p>
+                            <p class="fs-5 mb-4">For this week, we used reductive manufacturing to make alarm clock boxes. We used laser cutting to do this. Below is a sketch of the lid of the box that I wanted to make.</p>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/box_sketch.jpeg" alt="..." width="500" height="500" /></figure>
+                            <p class="fs-5 mb-4">I then started using fusion360 to make my design. I followed the video provided to us to make a box with different tabs. It wasn’t very difficult to follow the initial video, but I found out that once I tried to make any changes, it became incredibly difficult. I found that my box was over-constrained and if I wanted to set my dimensions, I would have to redo the entire box, which I ended up doing. Below is a picture of me struggling with constraints in fusion, and a screenshot of my first box design. (In the picture where I was struggling, those lines were not supposed to be at a weird angle and I could not figure out why they were) </p>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/fusion_struggle.jpeg" alt="..." width="500" height="500" /></figure>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/boxV1.jpeg" alt="..." width="500" height="500" /></figure>
+                            <p class="fs-5 mb-4"> I imported my first cut into lightburn as a dxf file. I had Vincent cut it, using the settings speed 20, and power 100. Once it was done, I put it together and it looked really good! The fit was a little loose, which Vincent told me was an issue with the laser due to calibration issues, but it stayed together. Below is a video of me cutting the box!  </p>
+                            <video width="500px" height="500px" controls="controls">
+                            <source src="images/laser_vid.MOV" type="video/mp4" />
+                            </video>
+                            <p class="fs-5 mb-4"> The only issue I had was I realized that I had made the box way too tall. I went in to go fix this by changing my parameter, and once again found that it didn’t work. My box was over constrained. So, I started again from scratch to make my box. This time went fairly smoothly and quickly, as I had done it 2 previous times. I made my box, exported it, and cut it with the same settings as before. The cut went well again, but I found that it was still too loose. I fixed this by making the end pieces slightly bigger in lightburn and then cutting them again. This fixed the issue and my box fit together much better. Below is a picture of my new box in fusion, the first cut that I did, the pieces arranged in lightburn, and my final box. </p>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/boxV2.jpeg" alt="..." width="500" height="500" /></figure>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/second_cut.jpeg" alt="..." width="500" height="500" /></figure>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/lightburn.jpeg" alt="..." width="500" height="500" /></figure>
+                            <figure class="mb-4-lg-8"><img class="img-fluid rounded" src="images/final_cut.jpeg" alt="..." width="500" height="500" /></figure>
+                            <p class="fs-5 mb-4"> The biggest struggle that I had was working with fusion and dealing with the constraints. This process was definitely frustrating, but it ended up working out in the end. I also struggled with the fit of the box, but by making the end pieces slightly bigger in lightburn, the issue was completely solved. In the end, my box turned out well, and I found the process to be very fun!</p>
+                        </section>
+                    </article>       
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Sophia's Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
